@@ -7,14 +7,133 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="./lib/css/styles.css">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/ico" href="logo.png">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+      <body> 
+        <!-- Nav var -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"></a><img class="logo" src="logo.png"></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><button type="button" class="btn btn-primary">Home</button></a>
+                      </li>
+                      <a class="nav-link" href="product.html"><button type="button" class="btn btn-success">Products</button></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><button type="button" class="btn btn-info">Contact</button></a>
+                </li>
+             </div>
+          </nav>
+          </nav>
+         
+        <form class="cmxform form-dislpay" id="commentForm" method="git" action="#">
+            <fieldset>
+              <h2>Please provide your name, email address (won't be published) and add a comment with your request or feedback</h2>
+                <div class="form-spacing">
+                <label for="cname">Full Name (required)</label>
+                <input id="cname" name="name" minlength="5" type="text" required placeholder="Full Name">
+              </div>
+              <div class="form-spacing">
+                <label for="cemail">email (required)</label>
+                <input id="cemail" type="email" name="email" required placeholder="email">
+              </div>
+              <div class="form-spacing">
+                <label for="password">Create Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" />
+              </div>
+              <div class="form-spacing">
+                <label for="confirm_password">Confirm password</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password" />
+              </div>
+              <div class="form-spacing">
+                <label for="ccomment">Your comment (required)</label>
+                <textarea class="form-comment" id="ccomment" name="comment" required></textarea>
+              </div>
+              <div class="form-spacing">
+                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+              </div>
+            </fieldset>
+          </form>
+
+          <footer>&copy;
+              <p class=>The Best Electronic.</p>
+                <div class="col-md-4">
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                      <li class="list-inline-item"><a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a></li>
+                      <li class="list-inline-item"><a href="https://support.google.com/plus/?hl=en#topic=9259565"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                  </div>
+            </footer>
+          
+        
 
     <!-- Optional JavaScript -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script>
+$("#commentForm").validate({
+				rules: {
+					name: "required",
+					password: {
+						required: true,
+						minlength: 5
+					},
+					confirm_password: {
+						required: true,
+						minlength: 5,
+						equalTo: "#password"
+					},
+					email: {
+						required: true,
+						email: true
+          },
+        },
+				messages: {
+					name: "Please enter your name!",
+					password: {
+						required: "Please provide a password",
+						minlength: "Your password must be at least 5 characters long"
+					},
+					confirm_password: {
+						required: "Please provide a password",
+						minlength: "Your password must be at least 5 characters long",
+						equalTo: "Please enter the same password as above"
+					},
+					email: "Please enter a valid email address",
+					agree: "Please accept our policy"
+				},
+				errorElement: "em",
+				errorPlacement: function ( error, element ) {
+					// Add the `help-block` class to the error element
+					error.addClass( "help-block" );
+
+					if ( element.prop( "type" ) === "checkbox" ) {
+						error.insertAfter( element.parent( "label" ) );
+					} else {
+						error.insertAfter( element );
+					}
+				},
+				highlight: function ( element, errorClass, validClass ) {
+					$( element ).parents( "p" ).addClass( "has-error" ).removeClass( "has-success" );
+				},
+				unhighlight: function (element, errorClass, validClass) {
+					$( element ).parents( "p" ).addClass( "has-success" ).removeClass( "has-error" );
+        }
+			});
+</script>
   </body>
 </html>
