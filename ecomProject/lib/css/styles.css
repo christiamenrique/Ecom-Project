@@ -139,6 +139,12 @@ footer {
     padding: 20px;
  }
 
+ .footer ul {
+    display: flex;
+ }
+.footer__links {
+    display: flex;
+}
 /* media queries */
 
 @media only screen and (max-width: 900px) {

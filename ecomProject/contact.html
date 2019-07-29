@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./lib/css/styles.css">
     <title>Contact Us</title>
     <link rel="icon" type="image/ico" href="logo.png">
+    <script src="https://kit.fontawesome.com/04b3baf344.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -28,11 +29,12 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html"><button type="button" class="btn btn-info">Contact</button></a>
           </li>
+        </ul>
       </div>
     </nav>
       
          
-    <form class="cmxform form-dislpay" id="commentForm" method="git" action="#">
+    <form class="cmxform form-dislpay" id="contactForm" method="git" action="#">
       <fieldset>
         <h2>Please provide your name, email address (won't be published) and add a comment with your request or feedback</h2>
           <div class="form-spacing">
@@ -62,8 +64,8 @@
     </form>
 
     <footer>&copy;
-      <p class=>The Best Electronic.</p>
-      <div class="col-md-4">
+      <p>The Best Electronic.</p>
+      <div class="col-md-12">
         <ul class="list-inline">
           <li class="list-inline-item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
           <li class="list-inline-item"><a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a></li>
@@ -80,58 +82,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    <script>
-      $("#commentForm").validate({
-				rules: {
-					name: "required",
-					password: {
-						required: true,
-						minlength: 5
-					},
-					confirm_password: {
-						required: true,
-						minlength: 5,
-						equalTo: "#password"
-					},
-					email: {
-						required: true,
-						email: true
-          },
-        },
-				messages: {
-					name: "Please enter your name!",
-					password: {
-						required: "Please provide a password",
-						minlength: "Your password must be at least 5 characters long"
-					},
-					confirm_password: {
-						required: "Please provide a password",
-						minlength: "Your password must be at least 5 characters long",
-						equalTo: "Please enter the same password as above"
-					},
-					email: "Please enter a valid email address",
-					agree: "Please accept our policy"
-				},
-				errorElement: "em",
-				errorPlacement: function ( error, element ) {
-					// Add the `help-block` class to the error element
-					error.addClass( "help-block" );
+    <script src="./ecom.js"></script>
 
-					if ( element.prop( "type" ) === "checkbox" ) {
-						error.insertAfter( element.parent( "label" ) );
-					} else {
-						error.insertAfter( element );
-					}
-				},
-				highlight: function ( element, errorClass, validClass ) {
-					$( element ).parents( "p" ).addClass( "has-error" ).removeClass( "has-success" );
-				},
-				unhighlight: function (element, errorClass, validClass) {
-					$( element ).parents( "p" ).addClass( "has-success" ).removeClass( "has-error" );
-        }
-			});
-    </script>
-    
   </body>
 </html>
