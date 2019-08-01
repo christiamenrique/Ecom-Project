@@ -39,3 +39,73 @@ function filterPrice() {
      });
 }
 
+// form function 
+$("#contactForm").validate({
+    rules: {
+        name: "required",
+        password: {
+            required: true,
+            minlength: 5
+        },
+        confirm_password: {
+            required: true,
+            minlength: 5,
+            equalTo: "#password"
+        },
+        email: {
+            required: true,
+            email: true
+        },
+    },
+        messages: {
+        name: "Please enter your name!",
+        password: {
+            required: "Please provide a password",
+            minlength: "Your password must be at least 5 characters long"
+        },
+        confirm_password: {
+            required: "Please provide a password",
+            minlength: "Your password must be at least 5 characters long",
+            equalTo: "Please enter the same password as above"
+        },
+        email: "Please enter a valid email address",
+        agree: "Please accept our policy"
+    },
+    errorElement: "em",
+    errorPlacement: function ( error, element ) {
+        error.addClass( "help-block" );
+
+        if ( element.prop( "type" ) === "checkbox" ) {
+            error.insertAfter( element.parent( "label" ) );
+        } else {
+            error.insertAfter( element );
+        }
+    },
+    highlight: function ( element, errorClass, validClass ) {
+        $( element ).parents( "p" ).addClass( "has-error" ).removeClass( "has-success" );
+    },
+    unhighlight: function (element, errorClass, validClass) {
+        $( element ).parents( "p" ).addClass( "has-success" ).removeClass( "has-error" );
+}
+});
+
+
+
+
+
+//  $(document).ready(function() {
+//      $( 'slideLeft' ).on('click',function(){
+//         var currentImg = $('.active');
+//         var nextImg = currentImg.next()
+//         if(nextImg.lengh){
+//             currentImg.removeClass('active').css('z-indez', -10);
+//             nextImg.addClass('active').css('z-index', 10)
+//         }
+//      });
+//  });
+
+
+
+    
+
+ 
