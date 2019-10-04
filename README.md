@@ -13,14 +13,14 @@ The site validate for HTML & CSS validity as well as WCAG 2.0 AA web accessibili
     Contact Page: 
     * There is a form that has a place for users to enter their name, email, add a comment, and anything else that you feel would be helpful for your website.
 
-**Visual:**
+### Visual:
     * The site uses media queries to be responsive for tablet & desktop. One for less than 800 pixels and one for greater than 800 pixels.
     * Footer with social media links.
 
-**JavaScript:**
+### JavaScript:
     * It has a form validation for the contact form
 
-**The project criteria:**
+### The project criteria:
     * HTML semantic structure. Validate the HTML!
     * CSS validation & usage. Use of media query
     * JavaScript: working scripts
