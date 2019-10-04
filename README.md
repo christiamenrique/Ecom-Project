@@ -6,11 +6,11 @@
 The site validate for HTML & CSS validity as well as WCAG 2.0 AA web accessibility.
 
 **Website features:**
-    **Home Page:**  
+    * **Home Page:**  
     * There is an image slideshow build with bootsrap.
-    **Products Page:** 
+    * **Products Page:** 
     * In this page I have 13 products. Each product shows a photo, name, price and a quick description. This page allows the user to filter by product type and price
-    **Contact Page:** 
+    * **Contact Page:** 
     * There is a form that has a place for users to enter their name, email, add a comment, and anything else that you feel would be helpful for your website.
 
 **Visual:**
