@@ -5,7 +5,7 @@
 * On this page, I have a home page. I am selling electronic products(tv, drones, speakers, etc..). I also have a contact page.
 The site validate for HTML & CSS validity as well as WCAG 2.0 AA web accessibility.
 
-**Website features:**
+### Website features:
     Home Page:  
     * There is an image slideshow build with bootsrap.
     Products Page:
