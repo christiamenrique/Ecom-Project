@@ -1,24 +1,24 @@
 # E-Commerce Site
 
-The products must be mainstream and professional.
-Site should validate for HTML & CSS validity as well as WCAG 2.0 AA web accessibility.
+This app was created with React. I use HTML, CSS, bootstrap for this original version. The purpose of this repository it's for education and test. But the code it's being coded correctly.
 
-**The website must have the following pages:**
-    **Home Page:** There should be an image slideshow. The rest of the home page content is up to you.
-    **Products Page:** This page should be a visual list at least 12 products on your site. Each product should show a photo, name, price and a quick description. This page should allows the user to filter by product type and price
-    **Contact Page:** There should be a form that has a place for users to enter their name, email, add a comment, and anything else that you feel would be helpful for your website.
+On this page, I have a home page. I am selling electronic products(tv, drones, speakers, etc..). I also have a contact page.
+The site validate for HTML & CSS validity as well as WCAG 2.0 AA web accessibility.
 
-**Visual requirements:**
-    - Colors, logo, fonts and icons are entirely up to you. Just try to make things neat and organized.
-    - The site should use media queries to be responsive for tablet & desktop. One for less than 800 pixels and one for greater than 800 pixels. Set a max width so the site doesn’t look bad as the screen size widens. Bonus for small mobile.. 
-    - Footer with social media links (can link to your personal pages)
+**Website features:**
+    **Home Page:** There is an image slideshow build with bootsrap.
+    **Products Page:** In this page I have 13 products. Each product shows a photo, name, price and a quick description. This page allows the user to filter by product type and price
+    **Contact Page:** There is a form that has a place for users to enter their name, email, add a comment, and anything else that you feel would be helpful for your website.
+
+**Visual:**
+    - The site uses media queries to be responsive for tablet & desktop. One for less than 800 pixels and one for greater than 800 pixels.
+    - Footer with social media links.
 
 **JavaScript:**
-    - Implement a form validation for the contact form
-    - Implement a jQuery slider for the home page.
+    - It has a form validation for the contact form
 
-**The project will be assessed on the following criteria:**
-    - HTML semantic structure. Validate your HTML!
+**The project criteria:**
+    - HTML semantic structure. Validate the HTML!
     - CSS validation & usage. Use of media query
     - JavaScript: working scripts
 
