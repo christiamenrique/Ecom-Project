@@ -7,7 +7,7 @@ The site validate for HTML & CSS validity as well as WCAG 2.0 AA web accessibili
 
 # Install
 * Open the terminal
-* git clone
+* git clone https://github.com/christiamenrique/Ecom-Project-1.0.0.git
 * copy path to the browser
 
 # Website features:
